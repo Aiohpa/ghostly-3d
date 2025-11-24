@@ -1,0 +1,20 @@
+{
+  "name": "ghostly-3d",
+  "version": "1.0.0",
+  "description": "Projet final: Web Design com especialização em Marketing Digital",
+  "homepage": "https://github.com/Aiohpa/ghostly-3d#readme",
+  "bugs": {
+    "url": "https://github.com/Aiohpa/ghostly-3d/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aiohpa/ghostly-3d.git"
+  },
+  "license": "ISC",
+  "author": "Sara Rodrigues",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
