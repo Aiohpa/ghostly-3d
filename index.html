@@ -9,25 +9,37 @@
   <meta name="author" content="Sara Rodrigues" />
   <title>Ghostly3D</title>
   <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css" />
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Henny+Penny&family=Libertinus+Sans:wght@700&family=Medula+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <script src="https://kit.fontawesome.com/bffcffbbba.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="index.html"><img src="Pictures/Logo_Ghostly.png" width="50px"
-            alt="Logo_Ghostly"></a>
-        <ul class="navbar-nav">
+    <nav class="navbar navbar-expand-md navbar-dark bg-container">
+      <div class="container-fluid">
+        <a class="navbar-brand henny-penny-regular" href="index.html"><img src="Pictures/Logo_Ghostly.png" width="100px"
+            height="100px" alt="Logo_Ghostly" class="d-inline-block align-text-center">
+          Ghostly3D
+        </a>
+        <ul class="navbar-nav align-items-center gap-2">
           <li class="nav-item">
-            <form class="d-flex" role="search">
+            <form class="d-flex align-items-center" role="search">
               <div class="input-group">
                 <input class="form-control" type="search" placeholder="Procure" aria-label="Search" />
                 <button class="btn btn-light" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
               </div>
             </form>
           </li>
-          <li class="nav-item"><a href="lab.html" class="nav-link">Lab</a></li>
+          <li class="nav-item"><a href="lab.html" class="nav-link active">Lab</a></li>
+          <li class="nav-item"><a href="loja.html" class="nav-link active">Loja</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link active">Blog</a></li>
+          <li class="nav-item"><a href="favoritos.html" class="nav-link active"><i class="fa-regular fa-heart"></i></a>
+          </li>
         </ul>
       </div>
     </nav>
