@@ -4,7 +4,7 @@ body {
 
 .container-fluid {
   padding: 24px 80px;
-  min-height: 140px;
+  height: 120px;
 }
 
 .bg-container {
@@ -23,7 +23,15 @@ body {
   font-size: 3rem;
 }
 
-@media (max-width: 991.98px) {
+.search-desktop {
+  display: block;
+}
+
+.search-mobile {
+  display: none;
+}
+
+@media (max-width: 1199px) {
   .container-fluid {
     padding: 12px 16px;
     min-height: auto;
@@ -31,11 +39,35 @@ body {
     align-items: flex-start;
     gap: 0.5rem;
   }
-  .navbar-collapse {
+  .offcanvas-end {
     width: 100%;
     background-color: #14131e;
   }
+
+  .offcanvas-title {
+    text-decoration: white;
+  }
   .navbar-nav {
     width: 100%;
+  }
+  .brand-title {
+    display: none;
+  }
+  .search-mobile {
+    display: flex;
+  }
+  .search-desktop {
+    display: none;
+  }
+  .navbar-logo {
+    width: 60px;
+    height: 60px;
+  }
+  .henny-penny-regular {
+    margin-right: 0;
+    padding-left: 28px;
+  }
+  .form-search-mobile {
+    width: 50%;
   }
 }
