@@ -76,12 +76,11 @@ body {
   height: clamp(300px, 30vh, 300px);
   width: clamp(250px, 20vw, 250px);
   border-radius: 8px;
+  z-index: -1;
 }
 
 .gallery-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  z-index: -1;
 }
 
 @media (max-width: 1199px) {
@@ -134,5 +133,23 @@ body {
 
   .card-main {
     height: clamp(200px, 20vh, 250px);
+  }
+}
+
+@media (max-width: 767px) {
+  .container-main {
+    height: clamp(350px, 55vh, 450px);
+  }
+  .container-main2 {
+    height: clamp(350px, 55vh, 450px);
+  }
+}
+
+@media (max-width: 575px) {
+  .container-main {
+    height: clamp(300px, 50vh, 400px);
+  }
+  .container-main2 {
+    height: clamp(300px, 50vh, 400px);
   }
 }
