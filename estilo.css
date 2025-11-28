@@ -124,11 +124,11 @@ body {
   }
 
   .container-main {
-    height: clamp(400px, 60vh, 500px);
+    height: clamp(400px, 55vh, 500px);
   }
 
   .container-main2 {
-    height: clamp(400px, 60vh, 500px);
+    height: clamp(400px, 55vh, 500px);
   }
 
   .card-main {
