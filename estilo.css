@@ -82,6 +82,31 @@ body {
 .gallery-image {
   z-index: -1;
 }
+.mscroll {
+  padding-bottom: 20px;
+  scrollbar-color: #837ef8 transparent;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mscroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.mscroll::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 100px;
+  margin: 0 15%;
+}
+
+.mscroll::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 100px;
+}
+
+.mscrollo::-webkit-scrollbar-thumb:hover {
+  background-color: #d1d1d1;
+}
 
 @media (max-width: 1199px) {
   .container-fluid {
@@ -132,7 +157,7 @@ body {
   }
 
   .card-main {
-    height: clamp(200px, 20vh, 250px);
+    height: clamp(250px, 20vh, 250px);
   }
 }
 
@@ -143,6 +168,10 @@ body {
   .container-main2 {
     height: clamp(350px, 55vh, 450px);
   }
+
+  .card-main {
+    height: clamp(200px, 25vh, 250px);
+  }
 }
 
 @media (max-width: 575px) {
@@ -151,5 +180,9 @@ body {
   }
   .container-main2 {
     height: clamp(300px, 50vh, 400px);
+  }
+
+  .card-main {
+    height: clamp(150px, 20vh, 200px);
   }
 }
