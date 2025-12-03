@@ -64,6 +64,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .container-main2 {
   height: clamp(585px, 60vh, 600px);
   padding: 24px 40px;
@@ -82,6 +83,7 @@ body {
 .gallery-image {
   z-index: -1;
 }
+
 .mscroll {
   padding-bottom: 20px;
   scrollbar-color: #837ef8 transparent;
