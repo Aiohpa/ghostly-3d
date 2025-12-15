@@ -2,11 +2,21 @@ body {
   background-color: #02010a;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  padding-top: 126px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .navbar {
-  position: fixed;
   width: 100%;
+  z-index: 100;
 }
 
 .container-fluid {
@@ -16,11 +26,16 @@ body {
 
 .bg-container {
   background-color: #14131e;
+  border: #14131e;
 }
 
 .nav-link {
   font-size: 1.5rem;
   padding: 0.75rem 1.25rem;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
 }
 
 .henny-penny-regular {
@@ -38,9 +53,15 @@ body {
   display: none;
 }
 
+.form-control:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 0.15rem rgba(150, 80, 255, 0.4) !important;
+  border-color: #9650ff !important;
+}
+
 .container-hero {
   background-image: url("Pictures/hero-bg.png");
-  height: clamp(500px, 60vh, 800px);
+  height: clamp(300px, 60vh, 600px);
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -69,15 +90,49 @@ body {
   padding: 24px 40px;
 }
 
+.spacing {
+  padding-bottom: 208px;
+}
+
 .card-main {
   height: clamp(300px, 30vh, 300px);
   width: clamp(250px, 20vw, 250px);
   border-radius: 8px;
   z-index: -1;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card {
+  border: none;
+}
+
+.card img {
+  transition: transform 2s;
+}
+
+.a:hover img {
+  transform: scale(1.15);
+}
+
+.card-lab {
+  height: clamp(350px, 50vh, 400px);
+  width: clamp(350px, 50vw, 400px);
+  border-radius: 8px;
+  background-color: #14131e;
 }
 
 .gallery-image {
   z-index: -1;
+}
+
+.fa-brands:hover {
+  color: #837ef8;
+  transition: color 0.3s;
+}
+
+.underline:hover {
+  text-decoration: underline;
 }
 
 .mscroll {
@@ -106,6 +161,15 @@ body {
   background-color: #d1d1d1;
 }
 
+.acorddion-width {
+  max-width: 800px;
+}
+
+.accordion-item,
+.accordion-header {
+  background-color: #14131e;
+}
+
 @media (max-width: 1400px) {
   .container {
     max-width: 100%;
@@ -120,6 +184,12 @@ body {
     align-items: flex-start;
     gap: 0.5rem;
   }
+
+  .spacing {
+    padding-top: 98px;
+    padding-bottom: 232px;
+  }
+
   .offcanvas-end {
     width: 100%;
     background-color: #14131e;
