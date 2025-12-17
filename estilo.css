@@ -162,12 +162,7 @@ a {
 }
 
 .acorddion-width {
-  max-width: 800px;
-}
-
-.accordion-item,
-.accordion-header {
-  background-color: #14131e;
+  width: 550px;
 }
 
 @media (max-width: 1400px) {
@@ -259,4 +254,9 @@ a {
   .card-main {
     height: clamp(150px, 20vh, 200px);
   }
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  box-shadow: none !important;
 }

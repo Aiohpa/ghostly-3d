@@ -69,64 +69,79 @@
         </nav>
     </header>
     <main class="vh-100 spacing d-flex justify-content-center align-items-center">
-        <section class="container d-flex flex-wrap justify-content-center align-items-center gap-4">
+        <form class="container d-flex flex-wrap justify-content-center align-items-center gap-4 needs-validation"
+            novalidate>
             <div class="card card-lab p-4">
                 <img src="" class="card-image h-100 w-100" alt="ficheiro 3D">
                 <div class="card-img-overlay d-flex justify-content-center align-items-center text-center text-white">
-                    <input class="form-control" type="file" id="stlFile" accept=".stl" hidden>
+                    <input class="form-control" type="file" id="stlFile" accept=".stl" hidden required>
                     <button class="btn btn-dark" onclick="document.getElementById('stlFile').click()">Carrega aqui o
                         teu ficheiro</button>
                     <p id="fileName" class="text-light"></p>
+                    <div class="invalid-feedback">escolhe um ficheiro</div>
                 </div>
             </div>
-            <form>
-                <div class="accordion acorddion-width" id="3DStyling">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Escolhe a cor do teu modelo
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#3DStyling">
-                            <div class="accordion-body">
-                                <div class="d-flex align-items-center">
-                                    <label for="colorPicker" class="form-label">Color picker</label>
-                                    <input type="color" class="form-control form-control-color" id="colorPicker"
-                                        value="#563d7c" title="Choose your color">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Qual é o tamanho que desejas?
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#3DStyling">
-                            <div class="accordion-body">
+            <div class="accordion acorddion-width " id="3DStyling">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#color-picker" aria-expanded="true" aria-controls="color-picker">
+                            Escolhe a cor do teu modelo
+                        </button>
+                    </h2>
+                    <div id="color-picker" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <div class="d-flex align-items-center gap-3 ">
+                                <input type="radio" class="btn-check" name="options-outlined" id="success-outlined"
+                                    autocomplete="off" required>
+                                <label class="btn btn-outline-success" for="success-outlined">Verde</label>
+                                <div class="invalid-feedback"><i class="fa-solid fa-circle-exclamation"></i></div>
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Deixa que nós tratamos do resto!
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#3DStyling">
-                            <div class="accordion-body d-flex justify-content-center">
-                                <button type="submit" class="btn primary-btn">Enviar</button>
+                                <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined"
+                                    autocomplete="off" required>
+                                <label class="btn btn-outline-danger" for="danger-outlined">Vermelho</label>
+                                <div class="invalid-feedback"><i class="fa-solid fa-circle-exclamation"></i></div>
+                                <input type="radio" class="btn-check" name="options-outlined" id="dark-outlined"
+                                    autocomplete="off" required>
+                                <label class="btn btn-outline-dark" for="dark-outlined">Preto</label>
+                                <div class="invalid-feedback"><i class="fa-solid fa-circle-exclamation"></i></div>
+                                <input type="radio" class="btn-check" name="options-outlined" id="secondary-outlined"
+                                    autocomplete="off" required>
+                                <label class="btn btn-outline-secondary" for="secondary-outlined">Cinzento</label>
+                                <div class="invalid-feedback"><i class="fa-solid fa-circle-exclamation"></i></div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </form>
-        </section>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#size-picker" aria-expanded="false" aria-controls="size-picker">
+                            Qual é o tamanho que desejas?
+                        </button>
+                    </h2>
+                    <div id="size-picker" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <input type="range" class="form-range" min="0" max="100" value="50" id="size">
+                            <output for="size" id="sizeValue" aria-hidden="true"></output>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#finished" aria-expanded="false" aria-controls="finished">
+                            Deixa que nós tratamos do resto!
+                        </button>
+                    </h2>
+                    <div id="finished" class="accordion-collapse collapse">
+                        <div class="accordion-body d-flex justify-content-center">
+                            <button type="submit" class="btn primary-btn">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
     </main>
     <footer class="bg-container sticky-bottom">
         <div class="container justify-content-center align-items-center text-center text-light p-4">
@@ -152,6 +167,34 @@
             document.getElementById("fileName").textContent = this.files[0]?.name || "";
         });
     </script>
+    <script>
+        const rangeInput = document.getElementById('size');
+        const rangeOutput = document.getElementById('sizeValue');
+
+        rangeOutput.textContent = rangeInput.value;
+
+        rangeInput.addEventListener('input', function () {
+            rangeOutput.textContent = this.value;
+        });
+    </script>
+    <script>
+        (() => {
+            'use strict'
+
+
+            const forms = document.querySelectorAll('.needs-validation')
+
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()</script>
 </body>
 
 </html>
