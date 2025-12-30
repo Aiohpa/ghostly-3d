@@ -157,12 +157,20 @@ a {
   border-radius: 100px;
 }
 
-.mscrollo::-webkit-scrollbar-thumb:hover {
+.mscroll::-webkit-scrollbar-thumb:hover {
   background-color: #d1d1d1;
 }
 
 .acorddion-width {
   width: 550px;
+}
+
+.filter {
+  background-color: #14131e;
+  border-radius: 8px;
+  padding: 16px;
+  height: 550px;
+  width: clamp(150px, 20vw, 280px);
 }
 
 @media (max-width: 1400px) {
