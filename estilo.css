@@ -81,6 +81,14 @@ a {
   text-decoration: #837ef8;
 }
 
+.filter-btn {
+  background-color: #837ef8;
+  border: none;
+  border-radius: 10px;
+  text-decoration: white;
+  padding: 8px 24px;
+}
+
 .container-main {
   padding: 24px 40px;
 }
