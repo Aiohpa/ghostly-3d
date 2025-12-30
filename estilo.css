@@ -181,6 +181,20 @@ a {
   width: clamp(150px, 20vw, 280px);
 }
 
+.form-select {
+  background-color: #14131e;
+  border: 1px solid #837ef8;
+  color: white;
+  width: 18%;
+  font-size: 1.2rem;
+}
+
+.form-select:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 0.15rem rgba(150, 80, 255, 0.4) !important;
+  border-color: #9650ff !important;
+}
+
 @media (max-width: 1400px) {
   .container {
     max-width: 100%;

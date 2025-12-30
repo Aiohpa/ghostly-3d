@@ -69,7 +69,16 @@
         </nav>
     </header>
     <main>
-        <aside class="container d-flex flex-column align-items-start justify-content-start mt-5 pt-4 mb-5">
+        <section class="container d-flex justify-content-end align-items-center mt-4 ">
+            <select class="form-select" id="filtroPreco" aria-label="Filtro de Preço">
+                <option selected>Ordenar por Preço</option>
+                <option value="1">Menor para Maior</option>
+                <option value="2">Maior para Menor</option>
+                <option value="3">Relevância</option>
+                <option value="4">Avaliação</option>
+            </select>
+        </section>
+        <aside class="container d-flex flex-column align-items-start justify-content-start mt-3 pt-4 mb-5">
             <form class="filter">
                 <h2 class="text-light mb-3">Filtros</h2>
                 <h3 class="text-light mb-2">Intervalo de preço</h3>
