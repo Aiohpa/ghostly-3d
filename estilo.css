@@ -89,6 +89,12 @@ a {
   padding: 8px 24px;
 }
 
+.filter-btn:hover {
+  border: 1px solid #837ef8;
+  background-color: transparent;
+  text-decoration: #837ef8;
+}
+
 .container-main {
   padding: 24px 40px;
 }
@@ -187,12 +193,61 @@ a {
   color: white;
   width: 18%;
   font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .form-select:focus {
   outline: none !important;
   box-shadow: 0 0 0 0.15rem rgba(150, 80, 255, 0.4) !important;
   border-color: #9650ff !important;
+}
+
+.background-blog {
+  background-color: #14131e;
+  border-radius: 8px;
+  padding: 16px;
+  height: 100%;
+  width: 100%;
+}
+
+.card-blog {
+  height: 447px;
+  width: 631px;
+}
+
+.espaçamento {
+  gap: 59px;
+}
+
+.card-blog-secondary {
+  height: 110px;
+  width: 600px;
+  box-shadow: 0 0 0 0.15rem rgba(150, 80, 255, 0.4);
+}
+
+.card-body-blog {
+  background-color: #14131e;
+  box-shadow: 0 0 0 0.15rem rgba(150, 80, 255, 0.4);
+}
+
+.hovercard:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.blog-post {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.sem_alinhamento {
+  align-items: initial !important;
+}
+
+#3DStyling {
+  color: red !important;
 }
 
 @media (max-width: 1400px) {

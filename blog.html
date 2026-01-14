@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="PT-pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keyword" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="Sara Rodrigues" />
+    <title>Ghostly3D</title>
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css" />
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Henny+Penny&family=Libertinus+Sans:wght@700&family=Medula+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bffcffbbba.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-dark bg-container fixed-top">
+            <div class="container w-100">
+                <a class="navbar-brand henny-penny-regular" href="index.html">
+                    <img src="Pictures/Logo_Ghostly.png" width="100px" height="100px" alt="Logo_Ghostly"
+                        class="d-inline-block align-text-center navbar-logo">
+                    <span class="brand-title">GHOSTLY3D</span>
+                </a>
+                <!--Barra de pesquisa de mobile-->
+                <form class="d-flex align-items-center form-search-mobile" role="search">
+                    <div class="input-group search-mobile">
+                        <input class="form-control" type="search" placeholder="Procure" aria-label="Search" />
+                        <button class="btn btn-light" type="submit"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </form>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end z-2" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body justify-content-end">
+                        <ul class="navbar-nav align-items-center justify-content-between gap-2">
+                            <li class="nav-item search-desktop">
+                                <form class="d-flex align-items-center" role="search">
+                                    <div class="input-group">
+                                        <input class="form-control" type="search" placeholder="Procure"
+                                            aria-label="Search" />
+                                        <button class="btn btn-light" type="submit"><i
+                                                class="fa-solid fa-magnifying-glass"></i></button>
+                                    </div>
+                                </form>
+                            </li>
+                            <li class="nav-item"><a href="lab.html" class="nav-link text-light">Lab 3D</a></li>
+                            <li class="nav-item"><a href="loja.html" class="nav-link text-light">Loja</a></li>
+                            <li class="nav-item"><a href="blog.html" class="nav-link text-light">Blog</a></li>
+                            <li class="nav-item"><a href="favoritos.html" class="nav-link text-light"><i
+                                        class="fa-solid fa-cart-shopping"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container d-flex justify-content-start align-items-start mt-5 p-2">
+            <div class="justify-content-center align-items-center p-2">
+                <h1 class="dm-sans-bold text-light display-3">Ele Joga Ela Comenta</h1>
+                <p class="dm-sans-regular text-light fs-5" style="text-align: justify;">Bem-vindos ao nosso blog "Ele
+                    Joga Ela Comenta", onde
+                    exploramos o fascinante mundo dos jogos, eletrónicos e de tabuleiro, através de uma perspectiva
+                    única
+                    e
+                    envolvente. Neste espaço, acompanhamos as aventuras de um jogador dedicado, enquanto a comentadora
+                    de
+                    bancada
+                    oferece comentários perspicazes e engraçados sobre cada partida.
+                    Sejas um gamer experiente ou um novato curioso,
+                    este blog é o lugar perfeito para descobrir novas
+                    perspetivas sobre os teus títulos favoritos ou, o próximo jogo de tabuleiro para jantares de família
+                    e
+                    amigos. Bora lá!?
+                </p>
+            </div>
+        </section>
+        <section class="container d-flex justify-content-between align-items-center mb-5">
+            <div class="container background-blog my-4 align-items-center justify-content-center">
+                <div class="row">
+                    <!-- Card blog principal -->
+                    <div class="col-md-6">
+                        <div class="card card-body-blog h-100">
+                            <img src="imagem-principal.jpg" class="card-img-top card-blog" alt="...">
+                            <a href="Pókemon.html">
+                                <div class="card-body text-light hovercard">
+                                    <h5 class="card-title">ZAmos jogar Pókemon?</h5>
+                                    <div class="w-100 d-flex justify-content-between align-items-start">
+                                        <p class="card-text">Entre prédios feitos em JPEG e estátuas humanas temos o tão
+                                            aguardado Pokémon ZA...</p>
+                                        <button class="btn primary-btn btn-lg fw-bold text-light"><a
+                                                href="https://open.spotify.com/search/podcast/podcastAndEpisodes"><i
+                                                    class="fa-solid fa-headphones"></i></a></button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Cards secundários -->
+                    <div class="col-md-4 d-flex flex-column justify-content-center gap-4 h-fill">
+                        <div class="card text-light card-body-blog card-blog-secondary mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="imagem2.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="Cuphead.html">
+                                        <div class="card-body hovercard w-100 d-flex flex-column justify-content-start align-items-start p-1"
+                                            style="text-align: justify;">
+                                            <h6 class="card-title">Post Secundário 2</h6>
+                                            <p class="card-text">Entre prédios feitos em JPEG e estátuas humanas temos o
+                                                tão
+                                                aguardado Pokémon ZA...</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="card-body w-100 d-flex justify-content-center align-items-center py-4">
+                                        <button class="btn primary-btn btn-lg fw-bold text-light"><a
+                                                href="https://open.spotify.com/search/podcast/podcastAndEpisodes"><i
+                                                    class="fa-solid fa-headphones"></i></a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card text-light card-body-blog card-blog-secondary mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="imagem2.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="Liesofp.html">
+                                        <div class="card-body hovercard w-100 d-flex flex-column justify-content-start align-items-start p-1"
+                                            style="text-align: justify;">
+                                            <h6 class="card-title">Post Secundário 2</h6>
+                                            <p class="card-text">Entre prédios feitos em JPEG e estátuas humanas temos o
+                                                tão
+                                                aguardado Pokémon ZA...</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="card-body w-100 d-flex justify-content-center align-items-center py-4">
+                                        <button class="btn primary-btn btn-lg fw-bold text-light"><a
+                                                href="https://open.spotify.com/search/podcast/podcastAndEpisodes"><i
+                                                    class="fa-solid fa-headphones"></i></a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card text-light card-body-blog card-blog-secondary mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="imagem2.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="Residentevil.html">
+                                        <div class="card-body hovercard w-100 d-flex flex-column justify-content-start align-items-start p-1"
+                                            style="text-align: justify;">
+                                            <h6 class="card-title">Post Secundário 2</h6>
+                                            <p class="card-text">Entre prédios feitos em JPEG e estátuas humanas temos o
+                                                tão
+                                                aguardado Pokémon ZA...</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="card-body w-100 d-flex justify-content-center align-items-center py-4">
+                                        <button class="btn primary-btn btn-lg fw-bold text-light"><a
+                                                href="https://open.spotify.com/search/podcast/podcastAndEpisodes"><i
+                                                    class="fa-solid fa-headphones"></i></a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card text-light card-body-blog card-blog-secondary">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="imagem2.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="Eldenring.html">
+                                        <div class="card-body hovercard w-100 d-flex flex-column justify-content-start align-items-start p-1"
+                                            style="text-align: justify;">
+                                            <h6 class="card-title">Post Secundário 2</h6>
+                                            <p class="card-text">Entre prédios feitos em JPEG e estátuas humanas temos o
+                                                tão
+                                                aguardado Pokémon ZA...</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="card-body w-100 d-flex justify-content-center align-items-center py-4">
+                                        <button class="btn primary-btn btn-lg fw-bold text-light"><a
+                                                href="https://open.spotify.com/search/podcast/podcastAndEpisodes"><i
+                                                    class="fa-solid fa-headphones"></i></a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="bg-container fixed-bottom">
+        <div class="container justify-content-center align-items-center text-center text-light p-4">
+            <div class="mt-4 gap-3 d-flex justify-content-center align-items-center">
+                <a href="#" class="text-light"><i class="fa-brands fa-whatsapp fa-3x mx-3"></i></a>
+                <a href="#" class="text-light"><i class="fa-brands fa-instagram fa-3x mx-3"></i></a>
+                <a href="#" class="text-light"><i class="fa-brands fa-spotify fa-3x mx-3"></i></a>
+                <a href="#" class="text-light"><i class="fa-brands fa-x-twitter fa-3x mx-3"></i></a>
+                <a href="#" class="text-light"><i class="fa-brands fa-telegram fa-3x mx-3"></i></a>
+            </div>
+            <div class="mt-5 gap-4 d-flex justify-content-center align-items-center">
+                <p><a href="#" class="text-light underline">Contacta-nos</a></p>
+                <p><a href="#" class="text-light underline">Política de Privacidade</a></p>
+                <p><a href="#" class="text-light underline">Livro de Reclamações</a></p>
+                <p><a href="#" class="text-light underline">&copy; 2025 Ghostly3D. Todos os direitos reservados.</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+    <script src="node_modules\@popperjs\core\dist\umd\popper.min.js"></script>
+</body>
+
+</html>

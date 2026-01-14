@@ -78,55 +78,152 @@
                 <option value="4">Avaliação</option>
             </select>
         </section>
-        <aside class="container d-flex flex-column align-items-start justify-content-start mt-3 pt-4 mb-5">
-            <form class="filter">
-                <h2 class="text-light mb-3">Filtros</h2>
-                <h3 class="text-light mb-2">Intervalo de preço</h3>
-                <div class="form-check m-2">
-                    <input type="radio" class="form-check-input" name="categoria" id="valor" value="categoria1">
-                    <label for="valor" class="form-check-label text-light">1-5€</label>
+        <section class="container d-flex justify-content-center align-items-center gap-2 mb-5 sem_alinhamento">
+            <aside class="flex-column align-items-start justify-content-start sem_alinhamento">
+                <form class="filter">
+                    <h2 class="text-light mb-3">Filtros</h2>
+                    <h3 class="text-light mb-2">Intervalo de preço</h3>
+                    <div class="form-check m-2">
+                        <input type="radio" class="form-check-input" name="categoria" id="valor" value="categoria1">
+                        <label for="valor" class="form-check-label text-light">1-5€</label>
+                    </div>
+                    <div class="form-check m-2">
+                        <input type="radio" class="form-check-input" name="categoria" id="valor1" value="categoria1">
+                        <label for="valor1" class="form-check-label text-light">6-10€</label>
+                    </div>
+                    <div class="form-check m-2">
+                        <input type="radio" class="form-check-input" name="categoria" id="valor2" value="categoria1">
+                        <label for="valor2" class="form-check-label text-light">11-15€</label>
+                    </div>
+                    <div class="form-check m-2">
+                        <input type="radio" class="form-check-input" name="categoria" id="valor3" value="categoria1">
+                        <label for="valor3" class="form-check-label text-light">16-20€</label>
+                    </div>
+                    <h3 class="text-light mb-2 mt-3">Coleções</h3>
+                    <div class="form-check m-2">
+                        <input type="checkbox" class="form-check-input" id="colecao1" value="colecao1">
+                        <label for="colecao1" class="form-check-label text-light">Cuphead</label>
+                    </div>
+                    <div class="form-check m-2">
+                        <input type="checkbox" class="form-check-input" id="colecao2" value="colecao2">
+                        <label for="colecao2" class="form-check-label text-light">Harry Potter</label>
+                    </div>
+                    <div class="form-check m-2">
+                        <input type="checkbox" class="form-check-input" id="colecao3" value="colecao3">
+                        <label for="colecao3" class="form-check-label text-light"> Pókemon</label>
+                    </div>
+                    <div class="form-check m-2">
+                        <input type="checkbox" class="form-check-input" id="colecao3" value="colecao3">
+                        <label for="colecao3" class="form-check-label text-light"> Binding of Isaac</label>
+                    </div>
+                    <div class="form-check m-2">
+                        <input type="checkbox" class="form-check-input" id="colecao3" value="colecao3">
+                        <label for="colecao3" class="form-check-label text-light"> Sly Cooper</label>
+                    </div>
+                    <div class="form-check m-2">
+                        <input type="checkbox" class="form-check-input" id="colecao3" value="colecao3">
+                        <label for="colecao3" class="form-check-label text-light"> Dungeons and Dragons</label>
+                    </div>
+                    <button type="submit" class="btn filter-btn text-light mt-2">Aplicar Filtros</button>
+                </form>
+            </aside>
+            <!--Galeria de Produtos-->
+            <div
+                class="row row-cols-2 row-cols-md-4 overflow-y-auto justify-content-start align-items-center mt-3 mb-5 p-2">
+                <!--Produto 1-->
+                <div class="card product-card bg-container text-light">
+                    <img src="Pictures/produto1.png" class="card-img-top product-image" alt="Produto 1">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title">Figura 3D Cuphead</h5>
+                        <p class="card-text">Preço: 12€</p>
+                        <a href="#" class="btn product-btn text-light">Adicionar ao Carrinho</a>
+                    </div>
                 </div>
-                <div class="form-check m-2">
-                    <input type="radio" class="form-check-input" name="categoria" id="valor1" value="categoria1">
-                    <label for="valor1" class="form-check-label text-light">6-10€</label>
+                <!--Produto 2-->
+                <div class="card product-card bg-container text-light">
+                    <img src="Pictures/produto1.png" class="card-img-top product-image" alt="Produto 1">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title">Figura 3D Cuphead</h5>
+                        <p class="card-text">Preço: 12€</p>
+                        <a href="#" class="btn product-btn text-light">Adicionar ao Carrinho</a>
+                    </div>
                 </div>
-                <div class="form-check m-2">
-                    <input type="radio" class="form-check-input" name="categoria" id="valor2" value="categoria1">
-                    <label for="valor2" class="form-check-label text-light">11-15€</label>
+                <!--Produto 3-->
+                <div class="card product-card bg-container text-light">
+                    <img src="Pictures/produto1.png" class="card-img-top product-image" alt="Produto 1">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title">Figura 3D Cuphead</h5>
+                        <p class="card-text">Preço: 12€</p>
+                        <a href="#" class="btn product-btn text-light">Adicionar ao Carrinho</a>
+                    </div>
                 </div>
-                <div class="form-check m-2">
-                    <input type="radio" class="form-check-input" name="categoria" id="valor3" value="categoria1">
-                    <label for="valor3" class="form-check-label text-light">16-20€</label>
+                <div class="card product-card bg-container text-light">
+                    <img src="Pictures/produto1.png" class="card-img-top product-image" alt="Produto 1">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title">Figura 3D Cuphead</h5>
+                        <p class="card-text">Preço: 12€</p>
+                        <a href="#" class="btn product-btn text-light">Adicionar ao Carrinho</a>
+                    </div>
                 </div>
-                <h3 class="text-light mb-2 mt-3">Coleções</h3>
-                <div class="form-check m-2">
-                    <input type="checkbox" class="form-check-input" id="colecao1" value="colecao1">
-                    <label for="colecao1" class="form-check-label text-light">Cuphead</label>
+                <div class="card product-card bg-container text-light">
+                    <img src="Pictures/produto1.png" class="card-img-top product-image" alt="Produto 1">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title">Figura 3D Cuphead</h5>
+                        <p class="card-text">Preço: 12€</p>
+                        <a href="#" class="btn product-btn text-light">Adicionar ao Carrinho</a>
+                    </div>
                 </div>
-                <div class="form-check m-2">
-                    <input type="checkbox" class="form-check-input" id="colecao2" value="colecao2">
-                    <label for="colecao2" class="form-check-label text-light">Harry Potter</label>
+                <div class="card product-card bg-container text-light">
+                    <img src="Pictures/produto1.png" class="card-img-top product-image" alt="Produto 1">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title">Figura 3D Cuphead</h5>
+                        <p class="card-text">Preço: 12€</p>
+                        <a href="#" class="btn product-btn text-light">Adicionar ao Carrinho</a>
+                    </div>
                 </div>
-                <div class="form-check m-2">
-                    <input type="checkbox" class="form-check-input" id="colecao3" value="colecao3">
-                    <label for="colecao3" class="form-check-label text-light"> Pókemon</label>
+                <div class="card product-card bg-container text-light">
+                    <img src="Pictures/produto1.png" class="card-img-top product-image" alt="Produto 1">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title">Figura 3D Cuphead</h5>
+                        <p class="card-text">Preço: 12€</p>
+                        <a href="#" class="btn product-btn text-light">Adicionar ao Carrinho</a>
+                    </div>
                 </div>
-                <div class="form-check m-2">
-                    <input type="checkbox" class="form-check-input" id="colecao3" value="colecao3">
-                    <label for="colecao3" class="form-check-label text-light"> Binding of Isaac</label>
+                <div class="card product-card bg-container text-light">
+                    <img src="Pictures/produto1.png" class="card-img-top product-image" alt="Produto 1">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title">Figura 3D Cuphead</h5>
+                        <p class="card-text">Preço: 12€</p>
+                        <a href="#" class="btn product-btn text-light">Adicionar ao Carrinho</a>
+                    </div>
                 </div>
-                <div class="form-check m-2">
-                    <input type="checkbox" class="form-check-input" id="colecao3" value="colecao3">
-                    <label for="colecao3" class="form-check-label text-light"> Sly Cooper</label>
+                <div class="card product-card bg-container text-light">
+                    <img src="Pictures/produto1.png" class="card-img-top product-image" alt="Produto 1">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title">Figura 3D Cuphead</h5>
+                        <p class="card-text">Preço: 12€</p>
+                        <a href="#" class="btn product-btn text-light">Adicionar ao Carrinho</a>
+                    </div>
                 </div>
-                <div class="form-check m-2">
-                    <input type="checkbox" class="form-check-input" id="colecao3" value="colecao3">
-                    <label for="colecao3" class="form-check-label text-light"> Dungeons and Dragons</label>
+                <div class="card product-card bg-container text-light">
+                    <img src="Pictures/produto1.png" class="card-img-top product-image" alt="Produto 1">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title">Figura 3D Cuphead</h5>
+                        <p class="card-text">Preço: 12€</p>
+                        <a href="#" class="btn product-btn text-light">Adicionar ao Carrinho</a>
+                    </div>
                 </div>
-                <button type="submit" class="btn filter-btn text-light mt-2">Aplicar Filtros</button>
-            </form>
+                <div class="card product-card bg-container text-light">
+                    <img src="Pictures/produto1.png" class="card-img-top product-image" alt="Produto 1">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title">Figura 3D Cuphead</h5>
+                        <p class="card-text">Preço: 12€</p>
+                        <a href="#" class="btn product-btn text-light">Adicionar ao Carrinho</a>
+                    </div>
+                </div>
 
-        </aside>
+            </div>
+        </section>
     </main>
     <footer class=" bg-container ">
         <div class=" container justify-content-center align-items-center text-center text-light p-4">
