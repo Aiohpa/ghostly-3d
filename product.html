@@ -68,16 +68,59 @@
                 </div>
         </nav>
     </header>
-    <main>
-        <section class="container justify-content-center align-items-center mt-5 pt-5">
+    <main class="d-flex product-main">
+        <section class="container container-product justify-content-center align-items-center mt-5 p-4">
             <div class="row">
-                <div class="col-12 col-md-6 text-center">
-                    <img src="Pictures/product-placeholder.png" alt="Product Image" class="img-fluid mb-4">
+                <div class="d-flex col-12 col-md-6 text-center">
+                    <img src="Pictures/Logo_Ghostly.png" alt="Product Image" class=" img-fluid mt-3 mb-4">
+                </div>
+                <div class="col-12 col-md-6 text-light">
+                    <h2 class="mt-2 mb-3">Cuphead</h2>
+                    <p class="mb-2 product-category">Cuphead</p>
+                    <h3 class="mb-4">25.00€</h3>
+                    <label for="Tamanho" class="mb-2">Tamanho e quantidade</label>
+                    <div class="d-flex justify-content-start align-items-center gap-4 mb-3">
+                        <select class="form-select" id="Tamanho" aria-label="Tamanho Produtos">
+                            <option selected>Tamanho</option>
+                            <option value="1">5cm</option>
+                            <option value="2">10cm</option>
+                            <option value="3">15cm</option>
+                            <option value="4">20cm</option>
+                        </select>
+                        <select class="form-select" id="Quantidade" aria-label="Quantidade Produtos">
+                            <option selected>Quantidade</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <button class="btn secondary-btn w-100 btn-lg mb-3">Adicionar ao Carrinho</button>
+                    <div class="accordion" id="description">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Descrição do Produto
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#description">
+                                <div class="accordion-body mt-0 pt-0">
+                                    Cuphead é um jogo de ação e tiro em plataforma lançado em 2017, o jogo é conhecido
+                                    pelo seu estilo artístico
+                                    inspirado nos desenhos animados dos anos 1930, com animações feitas à mão e
+                                    uma trilha sonora de jazz. Os jogadores controlam o Cuphead e o seu irmão Mugman
+                                    enquanto enfrentam uma série de chefes desafiadores para pagar uma dívida ao
+                                    diabo.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="bg-container fixed-bottom">
+    <footer class="bg-container footerfixed">
         <div class="container justify-content-center align-items-center text-center text-light p-4">
             <div class="mt-4 gap-3 d-flex justify-content-center align-items-center">
                 <a href="#" class="text-light"><i class="fa-brands fa-whatsapp fa-3x mx-3"></i></a>
