@@ -68,11 +68,26 @@
                 </div>
         </nav>
     </header>
-    <main class="vh-100 spacing d-flex justify-content-center align-items-center">
-        <form class="container d-flex flex-wrap justify-content-center align-items-center gap-4 needs-validation"
+    <main class="main-lab flex-column">
+        <section class="container mt-5 mb-3 p-2">
+            <h1 class="dm-sans-bold text-light display-3 px-2 mb-3">Laboratório Impressão 3D</h1>
+            <p class="dm-sans-regular text-light fs-5 px-2" style="text-align: justify;">Aqui vais poder descarregar o
+                teu
+                ficheiro .stl, onde daremos
+                vida aos modelos 3D que criaste ou que encontraste em fóruns de modelos 3D.
+                No nosso, oferecemos-te a oportunidade de personalizar o teu modelo seja em
+                tamanho
+                ou cor! Graças à nossa equipa de especialistas e à qualidade da resina que utilizamos, garantimos uma
+                impressão de alta qualidade, para que, o teu modelo
+                3D ganhe vida exatamente como imaginaste.
+            </p>
+        </section>
+        <form
+            class="container background-blog d-flex flex-wrap justify-content-center align-items-center gap-4 needs-validation"
             novalidate>
-            <div class="card card-lab p-4">
-                <img src="Pictures/Imagem de fundo esti.png" class=" h-100 w-100 object-fit-cover" alt="ficheiro 3D">
+            <div class="card card-lab my-4 p-2">
+                <img src="Pictures/Imagem de fundo esti.png" class="card-image h-100 w-100 object-fit-cover"
+                    alt="ficheiro 3D">
                 <div class="card-img-overlay d-flex justify-content-center align-items-center text-center text-white">
                     <input class="form-control" type="file" id="stlFile" accept=".stl" hidden required>
                     <button class="btn btn-dark" onclick="document.getElementById('stlFile').click()">Carrega aqui o
@@ -81,8 +96,8 @@
                     <div class="invalid-feedback">escolhe um ficheiro</div>
                 </div>
             </div>
-            <div class="accordion acorddion-width" id="3DStyling">
-                <div class="accordion-item">
+            <div class="accordion acorddion-width h-100 px-2" id="3DStyling">
+                <div class="accordion-item mb-5 h-100">
                     <h2 class="accordion-header">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
                             data-bs-target="#color-picker" aria-expanded="true" aria-controls="color-picker">
@@ -113,39 +128,39 @@
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div class="accordion-item mb-5 h-100">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#size-picker" aria-expanded="false" aria-controls="size-picker">
                             Qual é o tamanho que desejas?
                         </button>
                     </h2>
-                    <div id="size-picker" class="accordion-collapse collapse">
+                    <div id="size-picker" class="accordion-collapse collapse show">
                         <div class="accordion-body">
                             <input type="range" class="form-range" min="0" max="100" value="50" id="size">
                             <output for="size" id="sizeValue" aria-hidden="true"></output>
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div class="accordion-item h-100">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#finished" aria-expanded="false" aria-controls="finished">
                             Deixa que nós tratamos do resto!
                         </button>
                     </h2>
-                    <div id="finished" class="accordion-collapse collapse">
+                    <div id="finished" class="accordion-collapse collapse show">
                         <div class="accordion-body d-flex justify-content-center">
-                            <button type="submit" class="btn primary-btn">Enviar</button>
+                            <button type="submit" class="btn secondary-btn w-25">Enviar</button>
                         </div>
                     </div>
                 </div>
             </div>
         </form>
     </main>
-    <footer class="bg-container sticky-bottom">
-        <div class="container justify-content-center align-items-center text-center text-light p-4">
-            <div class="mt-4 gap-3 d-flex justify-content-center align-items-center">
+    <footer class=" bg-container ">
+        <div class=" container justify-content-center align-items-center text-center text-light p-4">
+            <div class="mt-4 gap-md-3 d-flex justify-content-center align-items-center">
                 <a href="#" class="text-light"><i class="fa-brands fa-whatsapp fa-3x mx-3"></i></a>
                 <a href="#" class="text-light"><i class="fa-brands fa-instagram fa-3x mx-3"></i></a>
                 <a href="#" class="text-light"><i class="fa-brands fa-spotify fa-3x mx-3"></i></a>
@@ -156,7 +171,10 @@
                 <p><a href="#" class="text-light underline">Contacta-nos</a></p>
                 <p><a href="#" class="text-light underline">Política de Privacidade</a></p>
                 <p><a href="#" class="text-light underline">Livro de Reclamações</a></p>
-                <p><a href="#" class="text-light underline">&copy; 2025 Ghostly3D. Todos os direitos reservados.</a></p>
+                <p>
+                    <a href="#" class="text-light underline">&copy; 2025 Ghostly3D. Todos os direitos
+                        reservados.</a>
+                </p>
             </div>
         </div>
     </footer>

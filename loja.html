@@ -69,7 +69,71 @@
         </nav>
     </header>
     <main class="product-main">
-        <section class="container w-100 d-flex justify-content-end align-items-center mt-5 mb-4">
+        <section class="container w-100 d-flex justify-content-end align-items-center mt-5 mb-4 gap-3">
+            <button class="btn secondary-btn text-light fs-4 px-4 filter-mobile" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#filtro" aria-controls="filtro">
+                Filtros
+            </button>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="filtro" aria-labelledby="filtroLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="filtroLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <form class="d-flex flex-column justify-content-center p-2">
+                        <h2 class="text-light mb-3">Filtros</h2>
+                        <hr class="border border-light opacity-50 w-100">
+                        <h3 class="text-light mb-2">Intervalo de preço</h3>
+                        <div class="form-check m-2">
+                            <input type="radio" class="form-check-input" name="categoria" id="valor" value="categoria1">
+                            <label for="valor" class="form-check-label text-light">1-5€</label>
+                        </div>
+                        <div class="form-check m-2">
+                            <input type="radio" class="form-check-input" name="categoria" id="valor1"
+                                value="categoria1">
+                            <label for="valor1" class="form-check-label text-light">6-10€</label>
+                        </div>
+                        <div class="form-check m-2">
+                            <input type="radio" class="form-check-input" name="categoria" id="valor2"
+                                value="categoria1">
+                            <label for="valor2" class="form-check-label text-light">11-15€</label>
+                        </div>
+                        <div class="form-check m-2">
+                            <input type="radio" class="form-check-input" name="categoria" id="valor3"
+                                value="categoria1">
+                            <label for="valor3" class="form-check-label text-light">16-20€</label>
+                        </div>
+                        <hr class="border border-light opacity-50 w-100">
+                        <h3 class="text-light mb-2 mt-3">Coleções</h3>
+                        <div class="form-check m-2">
+                            <input type="checkbox" class="form-check-input" id="colecao1" value="colecao1">
+                            <label for="colecao1" class="form-check-label text-light">Cuphead</label>
+                        </div>
+                        <div class="form-check m-2">
+                            <input type="checkbox" class="form-check-input" id="colecao2" value="colecao2">
+                            <label for="colecao2" class="form-check-label text-light">Harry Potter</label>
+                        </div>
+                        <div class="form-check m-2">
+                            <input type="checkbox" class="form-check-input" id="colecao3" value="colecao3">
+                            <label for="colecao3" class="form-check-label text-light"> Pókemon</label>
+                        </div>
+                        <div class="form-check m-2">
+                            <input type="checkbox" class="form-check-input" id="colecao3" value="colecao3">
+                            <label for="colecao3" class="form-check-label text-light"> Binding of Isaac</label>
+                        </div>
+                        <div class="form-check m-2">
+                            <input type="checkbox" class="form-check-input" id="colecao3" value="colecao3">
+                            <label for="colecao3" class="form-check-label text-light"> Sly Cooper</label>
+                        </div>
+                        <div class="form-check m-2">
+                            <input type="checkbox" class="form-check-input" id="colecao3" value="colecao3">
+                            <label for="colecao3" class="form-check-label text-light"> Dungeons and Dragons</label>
+                        </div>
+                        <button type="submit" class="btn filter-btn text-light mt-2">Aplicar Filtros</button>
+                    </form>
+                </div>
+            </div>
             <select class=" form-select categorias-select" id="filtroPreco" aria-label="Filtro de Preço">
                 <option selected>Ordenar por Preço</option>
                 <option value="1">Menor para Maior</option>
@@ -80,8 +144,9 @@
         </section>
         <section class="container d-flex justify-content-center align-items-center gap-2 mb-5 sem_alinhamento">
             <aside class="d-flex flex-column align-items-start justify-content-start sem_alinhamento">
-                <form class="filter">
+                <form class="filter filter-desktop">
                     <h2 class="text-light mb-3">Filtros</h2>
+                    <hr class="border border-light opacity-50 w-100">
                     <h3 class="text-light mb-2">Intervalo de preço</h3>
                     <div class="form-check m-2">
                         <input type="radio" class="form-check-input" name="categoria" id="valor" value="categoria1">
@@ -99,6 +164,7 @@
                         <input type="radio" class="form-check-input" name="categoria" id="valor3" value="categoria1">
                         <label for="valor3" class="form-check-label text-light">16-20€</label>
                     </div>
+                    <hr class="border border-light opacity-50 w-100">
                     <h3 class="text-light mb-2 mt-3">Coleções</h3>
                     <div class="form-check m-2">
                         <input type="checkbox" class="form-check-input" id="colecao1" value="colecao1">
@@ -128,93 +194,141 @@
                 </form>
             </aside>
             <!--Galeria de Produtos-->
-            <div class="col-12 col-md-9 col-lg-10">
+            <div class="col-12 col-md-9 col-lg-10 px-3">
                 <div class="row g-4">
                     <!--Produto 1-->
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <div class="card h-100">
-                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Produto">
+                    <a href="Cuphead.html" class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="Pictures/Cuphead3D.png" class="card-img-top img-product object-fit-cover"
+                                alt="Produto">
                             <div class="card-body">
-                                <h6 class="card-title">Produto 1</h6>
-                                <p class="card-text">Descrição curta do produto.</p>
+                                <h6 class="card-title">Chuphead</h6>
+                                <p class="card-text">Modelo 3D da figura Cuphead</p>
                             </div>
                             <div class="card-footer bg-white">
                                 <strong>€19.99</strong>
                             </div>
                         </div>
-                    </div>
+                    </a>
                     <!--Produto 2-->
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <div class="card h-100">
-                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Produto">
+                    <a href="Mugman.html" class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="Pictures/Mugman3D-removebg-preview.png"
+                                class="card-img-top img-product object-fit-cover" alt="Produto">
                             <div class="card-body">
-                                <h6 class="card-title">Produto 2</h6>
-                                <p class="card-text">Descrição curta do produto.</p>
+                                <h6 class="card-title">Mugman</h6>
+                                <p class="card-text">Modelo 3D da figura Mugman</p>
                             </div>
                             <div class="card-footer bg-white">
                                 <strong>€24.99</strong>
                             </div>
                         </div>
-                    </div>
+                    </a>
                     <!--Produto 3-->
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <div class="card h-100">
-                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Produto">
+                    <a href="SlyCooper.html" class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="Pictures/Sly3D (2).png" class="card-img-top img-product object-fit-cover"
+                                alt="Produto">
                             <div class="card-body">
-                                <h6 class="card-title">Produto 2</h6>
-                                <p class="card-text">Descrição curta do produto.</p>
+                                <h6 class="card-title">Sly Cooper</h6>
+                                <p class="card-text">Modelo 3D da figura <br> Sly Cooper</p>
                             </div>
                             <div class="card-footer bg-white">
                                 <strong>€24.99</strong>
                             </div>
                         </div>
-                    </div>
+                    </a>
                     <!--Produto 4-->
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <div class="card h-100">
-                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Produto">
+                    <a href="Bentley.html" class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="Pictures/bentley3D-removebg-preview.png"
+                                class="card-img-top img-product object-fit-cover" alt="Produto">
                             <div class="card-body">
-                                <h6 class="card-title">Produto 2</h6>
-                                <p class="card-text">Descrição curta do produto.</p>
+                                <h6 class="card-title">Bentley</h6>
+                                <p class="card-text">Modelo 3D da figura <br> Bentley</p>
                             </div>
                             <div class="card-footer bg-white">
                                 <strong>€24.99</strong>
                             </div>
                         </div>
-                    </div>
+                    </a>
                     <!--Produto 5-->
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <div class="card h-100">
-                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Produto">
+                    <a href="Murray.html" class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="Pictures/Murray3D-removebg-preview.png"
+                                class="card-img-top img-product object-fit-cover" alt="Produto">
                             <div class="card-body">
-                                <h6 class="card-title">Produto 2</h6>
-                                <p class="card-text">Descrição curta do produto.</p>
+                                <h6 class="card-title">Murray</h6>
+                                <p class="card-text">Modelo 3D da figura <br> Murray</p>
                             </div>
                             <div class="card-footer bg-white">
                                 <strong>€24.99</strong>
                             </div>
                         </div>
-                    </div>
+                    </a>
                     <!--Produto 6-->
-                    <div class="col-6 col-md-4 col-lg-3">
-                        <div class="card h-100">
-                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Produto">
+                    <a href="Malenia.html" class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="Pictures/malenia_card_400x400-removebg-preview.png"
+                                class="card-img-top img-product object-fit-cover" alt="Produto">
                             <div class="card-body">
-                                <h6 class="card-title">Produto 2</h6>
-                                <p class="card-text">Descrição curta do produto.</p>
+                                <h6 class="card-title">Malenia</h6>
+                                <p class="card-text">Modelo 3D da figura <br> Malenia</p>
                             </div>
                             <div class="card-footer bg-white">
                                 <strong>€24.99</strong>
                             </div>
                         </div>
-                    </div>
+                    </a>
+                    <!--Produto 7-->
+                    <a href="Isaac.html" class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="Pictures/Isaac3D.png" class="card-img-top img-product object-fit-cover"
+                                alt="Produto">
+                            <div class="card-body">
+                                <h6 class="card-title">Isaac</h6>
+                                <p class="card-text">Modelo 3D da figura <br> Isaac</p>
+                            </div>
+                            <div class="card-footer bg-white">
+                                <strong>€24.99</strong>
+                            </div>
+                        </div>
+                    </a>
+                    <!--Produto 8-->
+                    <a href="CharizardY.html" class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="Pictures/charizardY_card_400x400_y.png"
+                                class="card-img-top img-product object-fit-cover" alt="Produto">
+                            <div class="card-body">
+                                <h6 class="card-title">Charizard Y</h6>
+                                <p class="card-text">Modelo 3D da figura Charizard Y</p>
+                            </div>
+                            <div class="card-footer bg-white">
+                                <strong>€24.99</strong>
+                            </div>
+                        </div>
+                    </a>
+                    <!--Produto 9-->
+                    <a href="CharizardX.html" class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="Pictures/charizard_card_400x400.png"
+                                class="card-img-top img-product object-fit-cover" alt="Produto">
+                            <div class="card-body">
+                                <h6 class="card-title">Charizard X</h6>
+                                <p class="card-text">Modelo 3D da figura Charizard X</p>
+                            </div>
+                            <div class="card-footer bg-white">
+                                <strong>€24.99</strong>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
     </main>
     <footer class=" bg-container ">
         <div class=" container justify-content-center align-items-center text-center text-light p-4">
-            <div class="mt-4 gap-3 d-flex justify-content-center align-items-center">
+            <div class="mt-4 gap-md-3 d-flex justify-content-center align-items-center">
                 <a href="#" class="text-light"><i class="fa-brands fa-whatsapp fa-3x mx-3"></i></a>
                 <a href="#" class="text-light"><i class="fa-brands fa-instagram fa-3x mx-3"></i></a>
                 <a href="#" class="text-light"><i class="fa-brands fa-spotify fa-3x mx-3"></i></a>
