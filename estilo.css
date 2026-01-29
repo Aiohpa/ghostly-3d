@@ -532,6 +532,10 @@ a {
     min-height: auto;
     padding-top: 99px;
   }
+
+  .carousel-item img {
+    width: 50%;
+  }
 }
 
 @media (max-width: 575px) {
@@ -555,6 +559,9 @@ a {
     width: 100%;
     margin: 0;
     gap: 20px;
+  }
+  .product-main {
+    padding-bottom: 20px;
   }
 }
 
