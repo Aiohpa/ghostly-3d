@@ -463,6 +463,11 @@ a {
   .filter-desktop {
     display: none;
   }
+
+  .card-product-store {
+    width: 75%;
+    height: clamp(150px, 30vh, 300px);
+  }
 }
 
 @media (max-width: 990px) {
@@ -506,6 +511,8 @@ a {
 
   .card-product-store {
     margin-bottom: 5%;
+    width: 75%;
+    height: clamp(150px, 30vh, 300px);
   }
 
   .product-main {
@@ -550,6 +557,11 @@ a {
   }
   .product-main {
     padding-bottom: 20px;
+  }
+
+  .card-product-store {
+    height: clamp(150px, 30vh, 300px);
+    width: 75%;
   }
 }
 
