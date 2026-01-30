@@ -371,16 +371,12 @@ a {
   margin: 16px 0;
 }
 
-.blog-desktop {
-  display: block;
-}
-
-.blog-mobile {
-  display: none;
-}
-
 .form-select:hover {
   cursor: pointer;
+}
+
+.topright {
+  float: right;
 }
 
 @media (max-width: 1400px) {
@@ -453,14 +449,6 @@ a {
 
   .card-product {
     height: clamp(200px, 25vh, 250px);
-  }
-
-  .blog-desktop {
-    display: none;
-  }
-
-  .blog-mobile {
-    display: block;
   }
 
   .card-blog {
